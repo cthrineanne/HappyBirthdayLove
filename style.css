@@ -1,0 +1,254 @@
+body {
+	color: #3a0346;
+	font-family: "Fredoka One", cursive; 
+	margin: 0;
+	text-align: center;
+}
+/* Header styles */
+.top-container h2 {
+	font-weight: normal;
+}
+.top-container {
+	background-color: #9c4e52;
+	padding-top: 100px;
+	position: relative;
+}
+.top-cloud {
+	animation: loop 20s linear infinite;
+	position: absolute;
+	top: 20px;
+	width: 15%;
+}
+.bird {
+	position: relative;
+	width: 10%;
+	z-index: 3;
+}
+h1 {
+	color: #2e010c;
+	font-family: "Sacramento", cursive;
+	font-size: 5.625rem; /* 90px */
+	font-weight: 800;
+	margin: 15px auto 0;
+}
+h2 {
+	color: #880076;
+	font-family: "Montserrat", sans-serif;
+	font-size: 2.5rem;
+	font-weight: 600;
+}
+.web {
+	color: rgb(12, 95, 4);
+	text-decoration: none;
+}
+.bottom-cloud {
+	animation: loop-reverse 20s linear infinite;
+	position: absolute;
+	right: 25%;
+	width: 10%;
+}
+.programmer {
+	padding-top: 25px;
+	width: 30%;
+}
+h3 {
+	color: #580412;
+	font-family: "Montserrat", sans-serif;
+	font-size: 1.5rem;
+	font-weight: 600;
+}
+a {
+	color: #300415;
+	font-family: "Montserrat", sans-serif;
+	margin: 8px 16px;
+	text-decoration: none;
+	transition: color 0.2s ease-in-out;
+}
+a:hover {
+	color: rgb(210, 231, 117);
+}
+p {
+	line-height: 2;
+}
+hr {
+	border: dotted 7px #da3cd2;
+	border-top: none;
+	margin: 75px auto;
+	width: 7%;
+}
+/* main styling */
+.middle-container {
+	padding: 100px 0;
+}
+.profile-picture {
+	margin-bottom: 30px;
+	width: 20%;
+}
+.intro {
+	margin: auto;
+	text-align: justify;
+	width: 30%;
+}
+.profile-picture {
+	border-radius: 50%;
+}
+.skill-row {
+	margin: 100px auto;
+	text-align: left;
+	width: 50%;
+}
+.code-description,
+.cube-description {
+	text-align: justify;
+}
+.code-image {
+	float: left;
+	margin-right: 40px;
+	width: 20%;
+}
+
+.cube-image {
+	float: right;
+	margin-left: 30px;
+	width: 25%;
+}
+
+/* .code-description{
+	clear: left;
+}
+.chilli-description{
+	clear: right;
+} */
+
+.contact-message {
+	margin: 40px auto 60px;
+	width: 25%;
+}
+.pointer {
+	animation: floating 0.9s linear infinite;
+	font-size: 25px;
+	position: relative;
+}
+/* button styles */
+.btn {
+	background: #c490d8;
+	background-image: -webkit-linear-gradient(top, #d41162,#d41162,);
+	background-image: -moz-linear-gradient(top, #d41162,#d41162,);
+	background-image: -ms-linear-gradient(top, #d41162,#d41162,);
+	background-image: -o-linear-gradient(top, #d41162,#d41162,);
+	background-image: linear-gradient(top, #d41162,#d41162,);
+	-webkit-border-radius: 8;
+	-moz-border-radius: 8;
+	border-radius: 8px;
+	color: #ffffff;
+	font-family: "Montserrat", sans-serif;
+	font-size: 20px;
+	padding: 10px 20px 10px 20px;
+	text-decoration: none;
+}
+
+.btn:hover {
+	background: #30e3cb;
+	background-image: -webkit-linear-gradient(top, #ecd1a8, #ecd1a8);
+	background-image: -moz-linear-gradient(top, #ecd1a8, #ecd1a8);
+	background-image: -ms-linear-gradient(top, #ecd1a8, #ecd1a8);
+	background-image: -o-linear-gradient(top, #ecd1a8, #ecd1a8);
+	background-image: linear-gradient(top, #ecd1a8, #ecd1a8);
+	text-decoration: none;
+}
+
+/* footer style */
+.bottom-container {
+	background-color: #5f4053;
+	padding: 50px 0 20px;
+}
+.footer-link{
+	font-size: 1.7rem;
+}
+.copyright {
+	color: #eaf6f6;
+	font-size: 0.75rem;
+	padding: 20px 0;
+}
+
+/* animations */
+@keyframes floating {
+	from {
+		top: 0;
+	}
+	to {
+		top: 50px;
+	}
+}
+@keyframes loop {
+	0% {
+		left: 0;
+		transform: translateX(0);
+	}
+	50% {
+		left: 100%;
+		transform: translateX(-100%);
+	}
+	100% {
+		left: 0;
+		transform: translateX(0);
+	}
+}
+@keyframes loop-reverse {
+	0% {
+		left: 100%;
+		transform: translateX(-100%);
+	}
+	50% {
+		left: 0;
+		transform: translateX(0);
+	}
+	100% {
+		left: 100%;
+		transform: translateX(-100%);
+	}
+}
+/* Media Queries */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+	body {
+		font-size: 14px;
+	}
+	h1 {
+		font-size: 3.75rem;
+	}
+	h2 {
+		font-size: 2rem;
+	}
+	h3 {
+		font-size: 1rem;
+	}
+	.top-cloud,
+	.bottom-cloud {
+		width: 20%;
+	}
+}
+@media screen and (max-width: 480px) {
+	body {
+		font-size: 12px;
+	}
+	h1 {
+		font-size: 2rem;
+	}
+	h2 {
+		font-size: 1.2rem;
+	}
+	h3 {
+		font-size: 0.87rem;
+	}
+	.bird {
+		width: 15%;
+	}
+	.intro,
+	.contact-message {
+		width: 60%;
+	}
+	.top-cloud,
+	.bottom-cloud {
+		width: 20%;
+	}
+}
